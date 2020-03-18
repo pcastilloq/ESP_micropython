@@ -2,7 +2,7 @@ from machine import Pin
 from max6675 import MAX6675
 from umqttsimple import MQTTClient
 
-# ESP8266 Pin assignment
+# ESP32 Pin assignment
 so = Pin(19, Pin.IN)
 sck = Pin(5, Pin.OUT)
 cs = Pin(23, Pin.OUT)
@@ -35,6 +35,7 @@ while True:
     time.sleep(1)
   except OSError as e:
     restart_and_reconnect()
+
 
 
 
