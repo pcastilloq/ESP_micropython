@@ -15,7 +15,7 @@ gc.collect()
 
 ssid = 'VTR-0814086'
 password = 'kk8vkGffqpgb'
-mqtt_server = '192.168.0.14'
+mqtt_server = '192.168.0.12'
 client_id = ubinascii.hexlify(machine.unique_id())
 topic_sub = b'current'
 topic_sub2 = b'temp'
@@ -30,6 +30,7 @@ while station.isconnected() == False:
 
 print('Connection successful')
 print(station.ifconfig())
+
 
 
 
